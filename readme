@@ -1,0 +1,7 @@
+IRDS（image recognition data set）项目是一个机器视觉数据集采集工具
+
+
+fountain：数据源泉，用于从网络采集图片数据
+irdscache：数据集缓存
+purge：数据集清洗
+guard：数据获取，用于数据获取和数据集保存

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IRDS</title>
+    <style>a{TEXT-DECORATION:none}</style>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../static/plugin/uEditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../static/plugin/uEditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../static/plugin/uEditor/lang/zh-cn/zh-cn.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+    <div class="content">
+        <div class="nav"></div>
+        <div class="siderbar">
+            <ul>
+                <li><a href="javascript:void(0)">网址管理</a></li>
+                <li><a href="javascript:void(0)">网址管理</a></li>
+                <li><a href="javascript:void(0)">网址管理</a></li>
+                <li><a href="javascript:void(0)">网址管理</a></li>
+                <li><a href="javascript:void(0)">网址管理</a></li>
+            </ul>
+        </div>
+        <div class="table">
+            <h3>文件来源</h3>
+            <table border="1" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <th>ID</th>
+                    <th>网址</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function (){
+        var getData=function () {
+            $.ajax({
+                url:'web/select',
+                type:'post',
+                success:function (res) {
+                    console.log(res);
+                },
+                error:function (res) {
+                    console.log(res);
+                }
+            })
+        }
+        getData()
+    })
+</script>
